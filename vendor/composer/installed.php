@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '1c122e64ebc7b3f2deddf43542b1462169dbf90b',
+        'reference' => '63ee1461f08bc1ed459a52f1660b0a3e76e5c026',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -433,7 +433,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '1c122e64ebc7b3f2deddf43542b1462169dbf90b',
+            'reference' => '63ee1461f08bc1ed459a52f1660b0a3e76e5c026',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -564,6 +564,15 @@
             'install_path' => __DIR__ . '/../league/uri-interfaces',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'lucascudo/laravel-pt-br-localization' => array(
+            'pretty_version' => 'v3.0.3',
+            'version' => '3.0.3.0',
+            'reference' => '76e4fc4939416debf1595d59d4f0d49b4700c089',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../lucascudo/laravel-pt-br-localization',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'mobiledetect/mobiledetectlib' => array(
             'pretty_version' => '4.8.09',
