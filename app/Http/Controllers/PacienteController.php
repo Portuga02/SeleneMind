@@ -18,7 +18,7 @@ class PacienteController extends Controller
             'data_nascimento'=>'required|date',
             'genero'=>'nullable|string',
             'tem_filhos'=>'boolean',
-            'quantidade_filhos'=>'nullable|string|min:1',
+            'quantidade_filhos'=>'nullable|integer|min:1',
             'telefone'=>'nullable|string',
             'email'=>'nullable|email|unique:pacientes',
             'contato_emergencial' => 'nullable|string',
