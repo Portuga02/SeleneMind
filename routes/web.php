@@ -21,6 +21,4 @@ Route::get('/pacientes', function () {
     return Inertia::render('Pacientes/index');
 })->name('pacientes.index');
 
-
-
 Route::post('/pacientes', [PacienteController::class, 'store'])->name('pacientes.store');
