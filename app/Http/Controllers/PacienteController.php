@@ -31,6 +31,6 @@ class PacienteController extends Controller
         ]);
 
         PacientesModel::create($request->all());
-        return redirect()->route('pacientes.index')->with('success', 'Pacienete cadastrado com sucesso');
+        return redirect()->route('pacientes.index')->with('success', 'Paciente cadastrado com sucesso');
     }
 }
