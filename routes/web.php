@@ -3,16 +3,11 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\PacienteController;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return redirect()->route('login');
 });
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -22,3 +17,8 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+Route::get('/pacientes', function () {
+    return Inertia::render('Pacientes/index');
+})->name('pacientes.index');
+
+Route::post('/pacientes', [PacienteController::class, 'store'])->name('pacientes.store');
