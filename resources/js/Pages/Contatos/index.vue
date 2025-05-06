@@ -4,7 +4,7 @@
 
         <div class="bg-white dark:bg-gray-700 rounded shadow p-4">
             <!-- Tabela ou cards dos pacientes -->
-            <p class="text-gray-600 dark:text-gray-300">Nenhum paciente encontrado.</p>
+            <p class="text-gray-600 dark:text-gray-300">Nenhum contato encontrado.</p>
         </div>
     </div>
 </template>
