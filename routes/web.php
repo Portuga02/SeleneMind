@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\listarPacientesController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -22,3 +23,4 @@ Route::get('/pacientes', function () {
 })->name('pacientes.index');
 
 Route::post('/pacientes', [PacienteController::class, 'store'])->name('pacientes.store');
+Route::get('/listar-pacientes', [listarPacientesController::class, 'index'])->name('pacientes.index');
